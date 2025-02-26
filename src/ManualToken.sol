@@ -16,7 +16,7 @@ contract ManualToken {
         return 18;
     }
 
-    function balanceOf(address _owner) public pure returns (uint256) {
+    function balanceOf(address _owner) public view returns (uint256) {
         return s_balances[_owner];
     }
 
